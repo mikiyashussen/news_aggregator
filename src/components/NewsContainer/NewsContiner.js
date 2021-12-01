@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { fetchNews } from '../../actions/index'
 
-
+import CustomNews from '../CustomNews/CustomNews';
 import Bbc from '../Bbc/Bbc';
 import FirstNews from '../FirstNews/FirstNews';
 import Gizmodo from '../Gizmodo/Gizmodo';
@@ -20,11 +20,11 @@ class NewsContiner extends Component {
         return (
             <div >
                {newsLoaded ?  <div className="newsContainer">
-                   <TechCrunch news={allNews.tech_crunch} />
-                   <FirstNews news={allNews.first_news} />
-                   <Bbc news={allNews.bbc}/>
-                   <Gizmodo news={allNews.gizmodo} />
-                   <SkySport news={allNews.sky_sport} />
+                   <CustomNews news={allNews.tech_crunch} />
+                   <CustomNews news={allNews.first_news} />
+                   <CustomNews news={allNews.bbc}/>
+                   <CustomNews news={allNews.gizmodo} />
+                   <CustomNews news={allNews.sky_sport} />
                </div>  : 
                
                'Loading...'  } 
