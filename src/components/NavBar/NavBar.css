@@ -1,0 +1,15 @@
+.navBar {
+    font-size: larger;
+    background-color: rgb(16, 138, 138);
+    /* margin: 0; */
+    padding: 1em;
+    /* height: 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.navBar > p{
+    margin: 0;
+}

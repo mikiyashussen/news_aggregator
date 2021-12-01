@@ -1,0 +1,28 @@
+.newsContainer{
+    /* width: 100vw; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em 6em 2em 6em;
+    grid-gap: 0.8em;
+    /* background-color: #ffffffef; */
+    /* height: 20%; */
+    /* margin: 6em */
+
+}
+
+input[type='radio']{
+    appearance: none;
+    border: 1px solid black;
+    height: 2em;
+    width: 2em;
+    margin: 1em;
+    background-color: cadetblue;
+}
+
+input[type='radio']:checked {
+    background-color: chartreuse;
+}
+.radioButtons{
+    display: flex;
+
+}
