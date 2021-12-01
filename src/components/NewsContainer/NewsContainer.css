@@ -10,6 +10,14 @@
 
 }
 
+@media (max-width: 680px) {
+    .newsContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0.5em 3em 1em 3em;
+    }
+}
+
 input[type='radio']{
     appearance: none;
     border: 1px solid black;

@@ -33,3 +33,12 @@
 img{
   height: 3em;
 }
+
+@media (max-width: 553px) {
+  .images:not(:first-child){
+    height: 1.5em;
+  }
+   .images:not(:last-child) {
+     height: 1.5em;
+   }
+}
