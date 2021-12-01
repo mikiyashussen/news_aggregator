@@ -13,6 +13,7 @@
   /* color: rgb(6, 24, 24); */
   color: rgb(16 138 138);
   font-weight: 700;
+  font-size: large;
 }
 
 .newsWrapper > a:hover{
@@ -36,9 +37,16 @@ img{
 
 @media (max-width: 553px) {
   .images:not(:first-child){
-    height: 1.5em;
+    height: 0.5em;
+    /* width: 1em; */
   }
    .images:not(:last-child) {
-     height: 1.5em;
+     height: 0.5em;
+     /* width: 1em ; */
+   }
+   .images{
+     /* width: 50%; */
+     /* display: grid; */
+     /* grid-template-columns: 1fr 1fr 1fr; */
    }
 }
