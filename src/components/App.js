@@ -1,15 +1,18 @@
 import React from "react";
 import { Component } from "react"
 
-import newsDatabase from "./api/newsDatabase";
+import newsDatabase from "../api/newsDatabase";
 
 //Component Exports
-import NavBar from "./components/NavBar/NavBar";
-import NewsContiner from "./components/NewsContainer/NewsContiner";
-import Footer from "./components/Footer/Footer";
-
+import NavBar from "./NavBar/NavBar";
+import NewsContiner from "./NewsContainer/NewsContiner";
+import Footer from "./Footer/Footer";
 
 import "./App.css";
+/**
+ * This is the container component for the entire App
+ */
+
 class App extends Component {
   constructor(){
     super();

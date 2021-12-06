@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import combineReducers from './reducers/index'
 import thunk from 'redux-thunk';
 import './index.css';
-import App from './App';
+import App from './components/App';
 // import reportWebVitals from './reportWebVitals';
 // const store = createStore(combineReducers, applyMiddleware(thunk));
 ReactDOM.render(

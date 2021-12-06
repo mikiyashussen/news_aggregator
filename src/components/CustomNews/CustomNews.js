@@ -1,6 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const CustomNews = ({news, imgSrc}) => {
+/** 
+ * A news display template component that accepts an array of news object and renders them based on the key value pairs they contain.
+*/
+
+const CustomNews = ({news}) => {
+    
     return (
         <div>
             {/* <img src={imgSrc}/> */}
@@ -23,4 +29,15 @@ const CustomNews = ({news, imgSrc}) => {
     )
 }
 
-export default CustomNews
+export default CustomNews;
+
+CustomNews.prototype = {
+    /** news news */
+    news: PropTypes.string
+}
+
+// eslint-disable-next-line react/no-typos
+CustomNews.defaultprops = {
+    news: 'normal',
+}
+
