@@ -1,13 +1,5 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux';
-import { fetchNews } from '../../actions/index'
-
 import CustomNews from '../CustomNews/CustomNews';
-import Bbc from '../Bbc/Bbc';
-import FirstNews from '../FirstNews/FirstNews';
-import Gizmodo from '../Gizmodo/Gizmodo';
-import SkySport from '../SkySport/SkySport';
-import TechCrunch from '../TechCrunch/TechCrunch';
 
 import './NewsContainer.css';
 class NewsContiner extends Component {
@@ -18,7 +10,7 @@ class NewsContiner extends Component {
         console.log(this.props)
         const {allNews, newsLoaded} = this.props
         return (
-            <div >
+            <div id="newsContainer" >
                {newsLoaded ?  <div className="newsContainer">
                    <CustomNews news={allNews.tech_crunch} />
                    <CustomNews news={allNews.first_news} />
